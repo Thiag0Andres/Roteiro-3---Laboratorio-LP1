@@ -52,7 +52,11 @@ int main(){
     catch(FuncionarioNaoExisteException func){
         std::cerr << func.what() << endl;
     }
-
+	
+    delete f1;
+    delete f2;
+    delete f3;
+	
     return 0;
 }
 
